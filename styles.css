@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hey Comic', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  
+   
+   
+   
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    width: 1440px;
+    height: 600px;
+    position: relative;
+    top: -30px;
+    background-image: url('C:\Users\sprew\OneDrive\Desktop\PORTFOLIO\website\picks\3D\IMAGES\background.jpg');
+    background-size: cover;
+    margin: auto;
+ 
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    position: absolute;
+    top: 35px;
+    left: 217px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 24px;
+    font-family: 'The Amazing Spider-Man', sans-serif;
+    color: #C8242D;
+    position: absolute;
+    top: 7px;
+    left: -100px;
+    
+}
+
+.date-time {
+    position: relative;
+    top: 15px;
+    right: 10px;
+    left: 560px;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+
+.date-time span {
+    font-size: 24px;
+    font-family: 'Hey Comic', sans-serif;
+}
+
+.rectangle {
+    width: 1046px;
+    height: 500px;
+    background-color: #000000;
+    border-radius: 12px;
+    position: relative;
+    top: 89px;
+    left: 97px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: grab;
+}
+
+.video-item{
+    width: 100%;
+    height:100%;
+    position: relative;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.rectangle:active{
+    cursor: grabbing;
+}
+
+.carousel {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    cursor: grab;
+    user-select: none;
+    overflow-y: hidden;
+   
+
+}
+
+.carousel-item {
+    width: 1046px;
+    height: 500px;
+    gap: 0;
+    position: relative;
+    scroll-snap-align: start;
+    cursor: grab;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.auto-layout {
+    width: 1046px;
+    height: 500px;
+    gap: 0;
+    position: absolute;
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: grab;
+}
+
+.meta-text {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-size: 12px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+}
+
+.enjoy-creating {
+    position: absolute;
+    bottom: 330px;
+    left: 65px;
+    font-size: 16px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+}
+
+.description {
+    position: absolute;
+    bottom: 200px;
+    left: 65px;
+    font-size: 16px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+}
+
+
+
+.meta-text2 {
+    position: absolute;
+    bottom: 450px;
+    left: 25px;
+    font-size: 12px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff20;
+}
+
+.meta-text3 {
+    position: absolute;
+    bottom: 450px;
+    left: 25px;
+    font-size: 12px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+}
+
+.meta-text4 {
+    position: absolute;
+    bottom: 360px;
+    left: 65px;
+    font-size: 32px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+}
+
+.indicator {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+footer {
+    width: 1440px;
+    height: 200px;
+    background-color: #0e0e0e;
+    position: relative;
+    top: 170px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    position: absolute;
+    left: 198px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.footer-links a {
+    font-size: 18px;
+    font-family: 'Hey Comic', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color:#C8242D;
+}
+
+.connect {
+    position: relative;
+    left: 754px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.connect p {
+    font-size: 18px;
+    font-family: 'Hey Comic', sans-serif;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cursor styles */
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.cursor.big {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.background-clip{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 30%;
+}
+
+.clip-item{
+    position: relative;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 100%;
+}
+
+@media(min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.rectangle::-webkit-scrollbar{
+    width: 2em;
+}
+
+.rectangle::-webkit-scrollbar-track{
+    background:hsl(0, 0%, 0%)
+    
+}
+
+.rectangle::-webkit-scrollbar-thumb{
+    width: 2em;
+    background:hsl(0, 96%, 25%)
+    border-radius 10px;
+}
+
+.rectangle::-webkit-scrollbar-thumb:hover{
+    width: 2em;
+    background:#C8242D
+}
+
+.rotate-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+@media (orientation: portrait) {
+    .rotate-message {
+        display: block;
+    }
+
+    .container, .header, .rectangle, .footer {
+        display: none;
+    }
+}
